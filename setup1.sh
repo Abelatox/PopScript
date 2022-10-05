@@ -12,8 +12,8 @@ add-apt-repository -y ppa:apandada1/curtail &&
 #Arronax
 add-apt-repository -y ppa:diesch/stable
 
-#apt update &&
-#apt upgrade -y &&
+apt update &&
+apt upgrade -y &&
 
 apt install -y --install-recommends winehq-devel &&
 apt install -y winetricks exe-thumbnailer curtail &&
@@ -26,9 +26,8 @@ apt install -y apache2 php
 
 
 #Other programs
-#apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord curtail arronax tilix cura &&
+apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord curtail arronax tilix cura gnome-sushi nautilus-image-converter dconf-editor &&
 
 echo "Deleting line to disable Left Super opening the launcher"
-#sed '107d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
 sed -i.bak -e '/    overview_toggle(overlay_key_action);/d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
 echo "Now install ArcMenu and DashToPanel"
