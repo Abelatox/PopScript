@@ -13,30 +13,16 @@ apt update &&
 apt upgrade -y &&
 
 apt install -y --install-recommends winehq-devel &&
-apt install -y winetricks &&
-apt install -y exe-thumbnailer &&
-
-apt install -y curtail &&
+apt install -y winetricks exe-thumbnailer curtail &&
 
 #Games
-apt install -y steam &&
-apt install -y pcsx2 &&
+apt install -y steam pcsx2 &&
 
 #Apache
-apt install -y apache2 &&
-apt install -y php &&
+apt install -y apache2 php
 
 
 #Other programs
-apt install -y gnome-tweaks &&
-apt install -y gnome-shell-extensions &&
-apt install -y cowsay &&
-apt install -y lolcat &&
-apt install -y neofetch &&
-apt install -y htop &&
-apt install -y discord &&
-apt install -y arronax &&
-apt install -y tilix &&
-apt install -y cura &&
+apt install -y gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord arronax tilix cura &&
 
 echo "Now install ArcMenu and DashToPanel"
