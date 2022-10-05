@@ -9,6 +9,9 @@ mv winehq-jammy.sources /etc/apt/sources.list.d &&
 #Curtail
 add-apt-repository -y ppa:apandada1/curtail &&
 
+#Arronax
+add-apt-repository -y ppa:diesch/stable
+
 apt update &&
 apt upgrade -y &&
 
@@ -23,6 +26,6 @@ apt install -y apache2 php
 
 
 #Other programs
-apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord arronax tilix cura &&
+apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord curtail arronax tilix cura &&
 
 echo "Now install ArcMenu and DashToPanel"
