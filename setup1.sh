@@ -23,6 +23,6 @@ apt install -y apache2 php
 
 
 #Other programs
-apt install -y gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord arronax tilix cura &&
+apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord arronax tilix cura &&
 
 echo "Now install ArcMenu and DashToPanel"
