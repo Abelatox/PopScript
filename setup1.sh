@@ -23,7 +23,7 @@ apt install -y winetricks exe-thumbnailer curtail arronax &&
 apt install -y steam pcsx2 &&
 
 #Apache
-apt install -y apache2 php
+apt install -y apache2 php &&
 
 #Other programs
 apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord tilix cura gnome-sushi nautilus-image-converter dconf-editor &&
