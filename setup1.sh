@@ -26,8 +26,8 @@ apt install -y apache2 php
 
 
 #Other programs
-apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord curtail arronax tilix cura &&
+#apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord curtail arronax tilix cura &&
 
 echo "Deleting line to disable Left Super opening the launcher"
-sed -e '107/d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
+sed '107d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
 echo "Now install ArcMenu and DashToPanel"
