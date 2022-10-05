@@ -12,8 +12,8 @@ add-apt-repository -y ppa:apandada1/curtail &&
 #Arronax
 add-apt-repository -y ppa:diesch/stable
 
-apt update &&
-apt upgrade -y &&
+#apt update &&
+#apt upgrade -y &&
 
 apt install -y --install-recommends winehq-devel &&
 apt install -y winetricks exe-thumbnailer curtail &&
