@@ -1,5 +1,5 @@
 #!/bin/sh
-#Scipt 2.0 by Abelatox
+#Scipt 3.0 by Abelatox
 #Pop!_OS 22.04
 #Wine
 dpkg --add-architecture i386 &&
@@ -34,5 +34,5 @@ echo "Now installing ArcMenu and DashToPanel"
 wget -O gnome-shell-extension-installer "https://github.com/brunelli/gnome-shell-extension-installer/raw/master/gnome-shell-extension-installer" &&
 chmod +x gnome-shell-extension-installer &&
 mv gnome-shell-extension-installer /usr/bin/ &&
-gnome-shell-extension-installer 3628 &&
-gnome-shell-extension-installer --restart-shell 1160
+su -c "gnome-shell-extension-installer 3628" abel &&
+su -c "gnome-shell-extension-installer --restart-shell 1160" abel
