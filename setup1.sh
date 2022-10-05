@@ -30,4 +30,9 @@ apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolca
 
 echo "Deleting line to disable Left Super opening the launcher"
 sed -i.bak -e '/    overview_toggle(overlay_key_action);/d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
-echo "Now install ArcMenu and DashToPanel"
+echo "Now installing ArcMenu and DashToPanel"
+wget -O gnome-shell-extension-installer "https://github.com/brunelli/gnome-shell-extension-installer/raw/master/gnome-shell-extension-installer" &&
+chmod +x gnome-shell-extension-installer &&
+mv gnome-shell-extension-installer /usr/bin/ &&
+gnome-shell-extension-installer 3628 &&
+gnome-shell-extension-installer --restart-shell 1160
