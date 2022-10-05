@@ -30,5 +30,5 @@ apt install -y apache2 php
 
 echo "Deleting line to disable Left Super opening the launcher"
 #sed '107d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
-sed '/    overview_toggle(overlay_key_action);/d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js > /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
+sed -i.bak '/    overview_toggle(overlay_key_action);/d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
 echo "Now install ArcMenu and DashToPanel"
