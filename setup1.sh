@@ -11,7 +11,7 @@ wget -nc -O /etc/apt/sources.list.d/winehq-jammy.sources https://dl.winehq.org/w
 add-apt-repository -y ppa:apandada1/curtail &&
 
 #Arronax
-add-apt-repository -y ppa:diesch/stable
+add-apt-repository -y ppa:diesch/stable &&
 
 apt update &&
 apt upgrade -y &&
