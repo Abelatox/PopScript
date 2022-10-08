@@ -14,7 +14,7 @@ add-apt-repository -y ppa:apandada1/curtail &&
 add-apt-repository -y ppa:diesch/stable &&
 
 #PCSX2 Unstable
-add-apt-repository ppa:pcsx2-team/pcsx2-daily
+add-apt-repository -y ppa:pcsx2-team/pcsx2-daily
 
 apt update &&
 apt upgrade -y &&
