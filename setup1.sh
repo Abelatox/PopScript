@@ -13,6 +13,9 @@ add-apt-repository -y ppa:apandada1/curtail &&
 #Arronax
 add-apt-repository -y ppa:diesch/stable &&
 
+#PCSX2 Unstable
+add-apt-repository ppa:pcsx2-team/pcsx2-daily
+
 apt update &&
 apt upgrade -y &&
 
@@ -20,7 +23,7 @@ apt install -y --install-recommends winehq-devel &&
 apt install -y winetricks exe-thumbnailer curtail arronax &&
 
 #Games
-apt install -y steam pcsx2 &&
+apt install -y steam pcsx2-unstable &&
 
 #Apache
 apt install -y apache2 php &&
