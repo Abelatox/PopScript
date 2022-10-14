@@ -29,7 +29,7 @@ apt install -y steam pcsx2-unstable &&
 apt install -y apache2 php &&
 
 #Other programs
-apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions cowsay lolcat neofetch htop discord tilix cura gnome-sushi nautilus-image-converter dconf-editor &&
+apt install -y --ignore-missing gnome-tweaks gnome-shell-extensions screen cowsay lolcat neofetch htop discord tilix cura gnome-sushi nautilus-image-converter dconf-editor &&
 
 echo "Deleting line to disable Left Super opening the launcher"
 sed -i.bak -e '/    overview_toggle(overlay_key_action);/d' /usr/share/gnome-shell/extensions/pop-cosmic@system76.com/extension.js
